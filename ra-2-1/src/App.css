@@ -1,15 +1,14 @@
 .filter {
   display: flex;
   margin: 10px 0;
-  margin-left: 940px;
 }
 
 .filter div {
-  padding: 75px 75px;
+  padding: 15px 15px;
   border: 1px solid;
   margin-right: 10px;
   cursor: pointer;
-  font-size: 75px;
+  font-size: 15px;
 }
 
 .filter .active {
