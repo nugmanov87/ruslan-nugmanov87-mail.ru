@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function ProjectList(props) {
   const { projects } = props;
@@ -13,9 +13,13 @@ export default function ProjectList(props) {
 
   return (
     <div className="project-list">
-      {projectColumn.map(o => <div className="column">
-        {o.map(a => <img src={a.img} />)}
-      </div>)}
+      {projectColumn.map(o => (
+        <div className="column">
+          {o.map(b => (
+            <img src={b.img} />
+          ))}
+        </div>
+      ))}
     </div>
   );
 }
