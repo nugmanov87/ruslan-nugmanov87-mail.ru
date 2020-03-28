@@ -1,14 +1,16 @@
-import React, { useState } from "react";
-import PortfolioModel from "./PortfolioModel.js";
-import ProjectList from "./ProjectList.js";
-import Toolbar from "./Toolbar.js";
+import React, { useState } from 'react';
+import PortfolioModel from './PortfolioModel.js';
+import ProjectList from './ProjectList.js'
+import Toolbar from './Toolbar.js';
 
 export default function Portfolio() {
   const initPortfolioModel = new PortfolioModel();
-  const [items, setItems] = useState(initPortfolioModel.selected);
-
+  const [items, setItems] = useState(
+    initPortfolioModel.selected,
+  );
+  
   const prof = initPortfolioModel.projects.filter(o => {
-    if (items === "All") {
+    if (items === 'All') {
       return o.category;
     }
     return o.category === items;
@@ -19,13 +21,13 @@ export default function Portfolio() {
       <Toolbar
         filters={initPortfolioModel.filters}
         selected={items}
-        onSelectFilter={filter => {
+        onSelectFilter={(filter) => {
           console.log(filter);
           initPortfolioModel.selected = filter;
           setItems(filter);
         }}
       />
-      <ProjectList projects={prof} />
+      <ProjectList projects={prof}/>
     </div>
   );
 }
