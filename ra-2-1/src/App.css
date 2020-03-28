@@ -1,0 +1,40 @@
+.filter {
+  display: flex;
+  margin: 10px 0;
+  margin-left: 940px;
+}
+
+.filter div {
+  padding: 75px 75px;
+  border: 1px solid;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 75px;
+}
+
+.filter .active {
+  color: #ffffff;
+  background-color: #8a8a8a;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+.project-list img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-list img:last-child {
+  margin-bottom: 0;
+}
