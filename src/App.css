@@ -1,5 +1,6 @@
 .filter {
   display: flex;
+  justify-content: center;
   margin: 10px 0;
 }
 
@@ -17,9 +18,10 @@
 
 .project-list {
   display: flex;
+  justify-content: center;
 }
 .column {
-  width: 33%;
+  width: 25%;
   margin-right: 10px;
 }
 
