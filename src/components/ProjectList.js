@@ -23,3 +23,7 @@ export default function ProjectList(props) {
     </div>
   );
 }
+
+ProjectList.propTypes = {
+  projects: PropTypes.instanceOf(ProjectList).isRequired
+};
